@@ -4,10 +4,10 @@ Four open, reusable agent skills for rigorous legal scholarship and legal-docume
 
 | Skill | What it does |
 | --- | --- |
-| [`bluebook-review`](skills/bluebook-review/) | Reviews and corrects citations in Word manuscripts using a commit-pinned copy of Dan Epps's public Bluebook style guide and CSL implementation. |
-| [`legal-bibliography`](skills/legal-bibliography/) | Finds, ranks, verifies, and formats legal authorities through a structured multi-engine research workflow. |
-| [`inject-word-cross-references`](skills/inject-word-cross-references/) | Injects Word-native footnote and bookmark cross-references into DOCX packages while preserving formatting and package fidelity. |
-| [`lawreview-research`](skills/lawreview-research/) | Searches a compatible SQLite/FTS law-review corpus, expands passage context, finds citing documents, and evaluates retrieval quality. |
+| [`bluebook-review`](bluebook-review/) | Reviews and corrects citations in Word manuscripts using a commit-pinned copy of Dan Epps's public Bluebook style guide and CSL implementation. |
+| [`legal-bibliography`](legal-bibliography/) | Finds, ranks, verifies, and formats legal authorities through a structured multi-engine research workflow. |
+| [`inject-word-cross-references`](inject-word-cross-references/) | Injects Word-native footnote and bookmark cross-references into DOCX packages while preserving formatting and package fidelity. |
+| [`lawreview-research`](lawreview-research/) | Searches a compatible SQLite/FTS law-review corpus, expands passage context, finds citing documents, and evaluates retrieval quality. |
 
 ### Bluebook review attribution
 
@@ -22,10 +22,10 @@ Clone the repository, then copy or symlink the desired skill folder into your ag
 ```bash
 git clone https://github.com/yonathanarbel/legal-ai-skills.git
 mkdir -p ~/.codex/skills
-cp -R legal-ai-skills/skills/legal-bibliography ~/.codex/skills/
-cp -R legal-ai-skills/skills/inject-word-cross-references ~/.codex/skills/
-cp -R legal-ai-skills/skills/lawreview-research ~/.codex/skills/
-cp -R legal-ai-skills/skills/bluebook-review ~/.codex/skills/
+cp -R legal-ai-skills/legal-bibliography ~/.codex/skills/
+cp -R legal-ai-skills/inject-word-cross-references ~/.codex/skills/
+cp -R legal-ai-skills/lawreview-research ~/.codex/skills/
+cp -R legal-ai-skills/bluebook-review ~/.codex/skills/
 ```
 
 Install the Python dependency required by the Word cross-reference tooling:

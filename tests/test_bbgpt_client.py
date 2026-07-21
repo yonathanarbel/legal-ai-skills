@@ -5,7 +5,6 @@ from pathlib import Path
 
 SCRIPT = (
     Path(__file__).parents[1]
-    / "skills"
     / "legal-bibliography"
     / "scripts"
     / "bbgpt_client.py"

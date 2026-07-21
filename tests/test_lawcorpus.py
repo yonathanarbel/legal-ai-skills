@@ -8,7 +8,6 @@ from pathlib import Path
 
 SCRIPT = (
     Path(__file__).parents[1]
-    / "skills"
     / "lawreview-research"
     / "scripts"
     / "lawcorpus.py"

@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).parents[1]
-SCRIPTS = ROOT / "skills" / "inject-word-cross-references" / "scripts"
+SCRIPTS = ROOT / "inject-word-cross-references" / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
 from docx_xref.injector import CrossReferenceInjector  # noqa: E402

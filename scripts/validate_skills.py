@@ -9,7 +9,6 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILLS = ROOT / "skills"
 NAME_RE = re.compile(r"^[a-z0-9-]{1,64}$")
 
 
@@ -34,7 +33,10 @@ def parse_frontmatter(path: Path) -> dict[str, str]:
 
 def main() -> int:
     failures: list[str] = []
-    for folder in sorted(path for path in SKILLS.iterdir() if path.is_dir()):
+    folders = sorted(
+        path for path in ROOT.iterdir() if path.is_dir() and (path / "SKILL.md").is_file()
+    )
+    for folder in folders:
         skill = folder / "SKILL.md"
         if not skill.exists():
             failures.append(f"{folder.name}: missing SKILL.md")
@@ -58,7 +60,7 @@ def main() -> int:
     if failures:
         print("\n".join(failures), file=sys.stderr)
         return 1
-    print(f"Validated {len(list(SKILLS.iterdir()))} skills")
+    print(f"Validated {len(folders)} skills")
     return 0
 
 

@@ -8,7 +8,6 @@ from unittest import mock
 
 SCRIPT = (
     Path(__file__).parents[1]
-    / "skills"
     / "bluebook-review"
     / "scripts"
     / "fetch_epps_bluebook.py"
@@ -20,7 +19,6 @@ SPEC.loader.exec_module(fetcher)
 
 INSPECTOR_SCRIPT = (
     Path(__file__).parents[1]
-    / "skills"
     / "bluebook-review"
     / "scripts"
     / "inspect_docx_citations.py"
