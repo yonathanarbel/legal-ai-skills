@@ -1,0 +1,4 @@
+interface:
+  display_name: "Law Review Research"
+  short_description: "Search an authorized law review OCR corpus"
+  default_prompt: "Use $lawreview-research to search my configured law review corpus and verify relevant passages and citations."

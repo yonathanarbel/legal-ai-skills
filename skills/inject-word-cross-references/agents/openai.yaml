@@ -1,0 +1,4 @@
+interface:
+  display_name: "Inject Word Cross-References"
+  short_description: "Inject organic Word fields into DOCX files"
+  default_prompt: "Use $inject-word-cross-references to replace static footnote citations with Word-native cross-references in this DOCX."

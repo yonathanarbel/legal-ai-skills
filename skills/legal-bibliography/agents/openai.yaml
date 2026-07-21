@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Bibliography"
+  short_description: "Research and format authoritative legal sources"
+  default_prompt: "Use $legal-bibliography to research authoritative legal sources and return a clean, verifiable bibliography."
