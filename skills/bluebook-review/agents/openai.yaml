@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bluebook Review"
+  short_description: "Review Word citations with Epps rules"
+  default_prompt: "Use $bluebook-review to review and correct the citations in this Word document using the current Epps Bluebook rules."
