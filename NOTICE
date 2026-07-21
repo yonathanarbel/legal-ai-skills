@@ -1,0 +1,14 @@
+Legal AI Skills
+Copyright 2026 Yonathan Arbel
+
+The bluebook-review skill can download and apply the public materials in
+"Bluebook Style — Epps Version" from https://github.com/danepps/bluebook.
+Modifications in that upstream work are by Professor Daniel Epps. The original
+community Bluebook CSL is credited upstream to Bruce D'Arcus and Nancy Sims,
+with contributions from Patrick O'Brien. The upstream materials are licensed
+under Creative Commons Attribution-ShareAlike 4.0 International.
+
+The upstream guide, CSL file, and license are fetched into a user-selected
+working directory and are not vendored or relicensed by this repository.
+This project is independent and is not endorsed by the upstream authors,
+Washington University, or the publishers of The Bluebook.
